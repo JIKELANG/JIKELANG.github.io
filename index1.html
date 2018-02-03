@@ -1,68 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>鸡壳郎</title>
-
-    <style>
-        .divcss5{ text-indent:35px}
-        a:link{color:#FF000;}
-        a:visited{color:#00F00;}
-        a:hover{color:#FF00FF;}
-        a:active{color:#0000FF;}
-
-        h1{text-align:center}
-        b{text-indent: 2em;}
-        b{font-size:1.2em;}
-        b{font-weight:normal;}
-
-    body
-    {
-        background-image:url('http://goss.veer.com/creative/vcg/veer/1600water/veer-154575389.jpg');
-        background-position:top;
-        background-color:#cccccc;
-    }
-    </style>
-
+<meta charset="utf-8">
+<title>鸡壳郎</title>
 </head>
-
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+<script src="./js/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <body>
-<h1>酸菜鸡壳郎</h1>
-<hr />  <!--下划线-->
-<div class="divcss5">   <!--缩进两空格效果-->
-<b>苍南竟有一个神秘的古村落---瑶洞古村，坐落于浙江苍南霞光港境内，大家有听过吗？整个村落都是那种藤蔓围绕，常年潮雾萦绕，灌木丛生。一种即凄凉落寞又神秘吸引你的一个存在，光听老板这样介绍，我一下子来了兴趣。
-    传说中一个古村落的存在带给我们的不止是他独特的民俗民风当然还有留给后人的一些不可遗忘的美食！</b><br><br>
+<style>
+    *{
+        font-family: KaiTi;
+    }
+    a{
+        text-decoration: none!important;
+    }
+    #parsePic{
+        height:500px!important;
+    }
+    .productName{
+        color: #121312;
+        font-size: 47px;
+        margin-left: 110px;
+        margin-top: 17px;
+    }
+    .title{
+        font-size: 30px;
+        padding-left: 38px;
+    }
+    .txtPersonHistory{
+    width: 490px;
+    color: #ffffff;
+    position: relative;
+    top: -224px;
+    left: 610px;
+    font-size: 20px;
+}
+</style>
+<div class="container-fluid">
+	<div class="row-fluid">
+		<div class="span6">
+			<h3 class="productName">鸡壳郎</h3>
+		</div>
+		<div class="span6">
+			<div class="navbar">
+				<div class="navbar-inner">
+					<div class="container-fluid" style="position: absolute;left: 500px;bottom: 58px;">
+						 <a data-target=".navbar-responsive-collapse" data-toggle="collapse" class="btn btn-navbar">
+                             <a href="#" class="brand title">首页</a>
+                             <a href="#" class="brand title">菜色美食</a>
+                              <a href="#" class="brand title">品牌故事</a>
+                              <a href="#" class="brand title">新闻资讯</a>
+                              <a href="#" class="brand title">关于我们</a>
+						<div class="nav-collapse collapse navbar-responsive-collapse">
+							<ul class="nav">
+								<li class="active">
+									<a href="#">主页</a>
+								</li>
+								<li>
+									<a href="#">链接</a>
+								</li>
+								<li>
+									<a href="#">链接</a>
+								</li>
+								<li class="dropdown">
+									 <a data-toggle="dropdown" class="dropdown-toggle" href="#">下拉菜单<strong class="caret"></strong></a>
+									
+								</li>
+							</ul>
+							<ul class="nav pull-right">
+								<li class="dropdown">
+									<ul class="dropdown-menu">
+										<li>
+											<a href="#">下拉导航1</a>
+										</li>
+										<li>
+											<a href="#">下拉导航2</a>
+										</li>
+										<li>
+											<a href="#">其他</a>
+										</li>
+										<li class="divider">
+										</li>
+										<li>
+											<a href="#">链接3</a>
+										</li>
+									</ul>
+								</li>
+							</ul>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+		</div>
+	</div>
+	<div class="row-fluid" style="position: absolute;bottom: 50px;right:0;">
+		<div class="span12">
+			<div class="carousel slide" id="carousel-960397">
+				<ol class="carousel-indicators">
+					<li class="active" data-slide-to="0" data-target="#carousel-960397">
+					</li>
+					<li data-slide-to="1" data-target="#carousel-960397">
+					</li>
+					<li data-slide-to="2" data-target="#carousel-960397">
+					</li>
+                    <li data-slide-to="3" data-target="#carousel-960397">
+					</li>
+                    <li data-slide-to="4" data-target="#carousel-960397">
+					</li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="item active">
+						<img id="parsePic" width="1600" height="500" alt="" src="img/b.jpg" />
+						<div class="carousel-caption">
+							<h4>
+								酸菜鸡壳
+							</h4>
+							<p>
+								相传民国初期，瑶洞老中医杨氏，每年开春时都将自家田头种的雪菜去茎，盐泡至木桶腌制发酵成酸菜，后杀鸡去头尾与凤爪，用白糖浸润，配以蚕豆、黄酒、米粉、粉丝等二十余种食材烹制而成，味香肉滑，汤汁清甜，味觉妙不可言，从此有了瑶洞酸菜鸡壳美名。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img id="parsePic" alt="" src="img/5.jpg" width="1600" height="500"/>
+						<div class="carousel-caption">
+							<h4>
+								猪头肉片
+							</h4>
+							<p>
+								猪头肉，是猪的头部的肉。其美味，于民间早就声誉鹊起，据说淮扬菜系中的“扒烧整猪头”火工最讲究、历史最悠久，是道久负盛名的淮扬名菜。有着丰富的营养价值。食疗作用的猪头肉，性平，味甘咸；补虚，滋阴，养血，润燥。
+							</p>
+						</div>
+					</div>
+                    <div class="item">
+						<img id="parsePic" alt="" src="img/timg.jpg" width="1600" height="500"/>
+						<div class="carousel-caption">
+							<h4>
+								羊骨髓
+							</h4>
+							<p>
+								羊骨髓又称羊蝎子。传说康熙年间了，蒙古王爷奈曼王，有次打猎回来路过后院闻见香气扑鼻。跟下人打听才知道是新来的厨子给下人们炖羊脊骨吃。王爷一尝，美味啊。然后看脊骨那形状酷似一只蝎子，就起名为“羊蝎子”并且作为府上的食谱。
+							</p>
+						</div>
+					</div>
+                    <div class="item">
+						<img id="parsePic" alt="" src="img/4.jpg" width="1600" height="500"/>
+						<div class="carousel-caption">
+							<h4>
+								瘦肉羹
+							</h4>
+							<p>
+								温州瘦肉丸是一道老少皆宜的名点，属于浙菜系。风靡温州街头的美味小吃瘦肉丸（丽水地区也有这种 很传统），也称瘦肉羹，来源于福建省福鼎市，细长的肉羹划入滚烫的水中，立即浮上来，洁白而略微红，味道鲜美，很有嚼劲，汤汁澄清美味，略带酸辣味。放入紫菜、榨菜丝、虾皮、葱花、香菜粒，鲜香俱全、美味可口。
+							</p>
+						</div>
+					</div>
+					<div class="item">
+						<img id="parsePic" alt="" src="img/pi.jpg" width="1600" height="500"/>
+						<div class="carousel-caption">
+							<h4>
+								冰爽啤酒
+							</h4>
+							<p>
+								冰爽是哈尔滨啤酒的中低端系列，全国大部分省市分销，500ml零售价大概3-5元，主要是线下促销，不会有线上广告支持，特点是酒精度相对比较低，口感略淡，酒精度大概3.5度左右。
+							</p>
+						</div>
+					</div>
+				</div> <a data-slide="prev" href="#carousel-960397" class="left carousel-control">‹</a> <a data-slide="next" href="#carousel-960397" class="right carousel-control">›</a>
+			</div>
+		</div>
+	</div>
 </div>
-<div class="divcss5">  <!--缩进两空格效果-->
-<b>相传民国初期，瑶洞老中医杨氏，每年开春时都将自家田头种的雪菜去茎，盐泡至木桶腌制发酵成酸菜，后杀鸡去头尾与凤爪，用白糖浸润，配以蚕豆、黄酒、米粉、粉丝等二十余种食材烹制而成，味香肉滑，汤汁清甜，味觉妙不可言，从此有了瑶洞酸菜鸡壳美名。</b><br><br>
-</div>
-
-<table>    <!--并排图片且有链接索引-->
-    <div>
-        <li><a href="http://www.sohu.com/a/139113473_657956.html"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516952759958&di=5631a5763fe2dd3dc72714aaf3e4072a&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170508%2F3af46e6d1d114c5fae44520fd32453d8_th.png" alt="" width=400px height=400px  style="border:3px solid #000;"/></a></li>
-        <li><a href="http://www.sohu.com/a/132826273_670200.html"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516952854384&di=31a34394bb153ecec6d0e013ae1f941a&imgtype=0&src=http%3A%2F%2Fwww.zsnews.cn%2Fdata%2Fphoto%2FEating%2F2003789374697145.jpg" alt="" width=400px height=400px  style="border:3px solid #000;"/></a></li>
-        <li><a href="http://www.sohu.com/a/139113473_657956.html"><img src="http://img.zcool.cn/community/018f2a5816fd16a84a0e282bed550b.jpg@1280w_1l_2o_100sh.jpg" alt="" width=400px height=400px style="border:3px solid #000;"/></a></li>
-        <li><a href="http://www.sohu.com/a/139113473_657956.html"><img src="http://img.zcool.cn/community/018f2a5816fd16a84a0e282bed550b.jpg@1280w_1l_2o_100sh.jpg" alt="" width=400px height=400px style="border:3px solid #000;"/></a></li>
-        <li><a href="http://www.sohu.com/a/139113473_657956.html"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516954537039&di=5a7b4447a4efb3c43643e2537cbb4c47&imgtype=0&src=http%3A%2F%2Fpic.58pic.com%2F58pic%2F13%2F11%2F18%2F10s58PICck9_1024.jpg" alt="" width=400px height=400px style="border:3px solid #000;"/></a></li>
-
-
+<div style="position: relative;top: 512px;padding-bottom: 291px;left: 121px;width: 1160px;">
+    <span style="color: red;font-weight: 600;font-size: 80px;">品牌故事</span>
+    <div style="width: 598px;margin-left: 530px;font-size: 20px;margin-top: -123px;">
+        起源：瑶洞坐落于浙江苍南霞光港境内，瑶洞山海拔500余米，常年潮雾萦绕，灌木丛生，放养着一群群瑶洞土鸡，练成了梯田山野里独自穿越的精灵，当地素有瑶洞山鸡一啼声，山下渔民起锚忙之誉，相传民国初期，瑶洞老中医杨氏，每年开春时都将自家田头种的雪菜去茎，盐泡至木桶腌制发酵成酸菜，后杀鸡去头尾与凤爪，用白糖浸润，配以蚕豆、黄酒、米粉、粉丝等二十余种食材烹制而成，味香肉滑，汤汁清甜，味觉妙不可言，从此有了酸菜鸡壳美名。经数代传人的传承积累，酸菜鸡壳在色、香、味上一一俱全，本着发扬传统小吃美食精神，以大厨师小作坊为经营理念，欲发展进驻温州霞光、南宋、灵溪、龙港、敖江、福建等地，为传统酸菜鸡壳美食流芳百世而奋斗。
     </div>
-</table>
-<!--
-<div style=" width:1500px">
-    <div  style=" float:left; width:500px;"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516952759958&di=5631a5763fe2dd3dc72714aaf3e4072a&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170508%2F3af46e6d1d114c5fae44520fd32453d8_th.png"  width=400px height=400px  onClick="goto()"/></div>
-    <div  style=" float:left; width:500px;"><img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516952854384&di=31a34394bb153ecec6d0e013ae1f941a&imgtype=0&src=http%3A%2F%2Fwww.zsnews.cn%2Fdata%2Fphoto%2FEating%2F2003789374697145.jpg"  width=400px height=400px  onClick="gotopageX()"/></div>
-    <div  style=" float:left; width:500px;"><img src="http://img.zcool.cn/community/018f2a5816fd16a84a0e282bed550b.jpg@1280w_1l_2o_100sh.jpg" width=400px height=400px  onClick="gotopageX()"/></div>
-</div><br><br>
-<script>
-    function gotopageX(){
-        window.location.href="http://www.sohu.com/a/132826273_670200.html";
-    }
-    function goto(){
-        window.location.href="http://www.sohu.com/a/139113473_657956.html";
-    }
-</script>-->
-<a href="http://www.sohu.com/a/139113473_657956">酸菜鸡壳品牌故事</a>
-<!--<img src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1516943924248&di=92f8d00f1f6f75493c652d21806b4373&imgtype=0&src=http%3A%2F%2Fimg.mp.sohu.com%2Fupload%2F20170508%2F3af46e6d1d114c5fae44520fd32453d8_th.png"  width="200"  height="200">-->
+</div>
+<div style="background-color: #7b3131;margin-top: 290px;height:410px;">
+    <div style="margin: 15px 0 21px 86px;padding-top: 40px;">
+        <img class="parsePic1" src="img/b.jpg" width="150" height="150"/>
+        <img class="parsePic1" src="img/5.jpg" width="150" height="150"/>
+        <img class="parsePic1" src="img/timg.jpg" width="150" height="150"/>
+    </div>
+    <div style="margin: 15px 0 21px 86px;padding-bottom: 15px;">
+        <img class="parsePic1" src="img/4.jpg" width="150" height="150"/>
+        <img class="parsePic1" src="img/c.jpg" width="150" height="150"/>
+        <img class="parsePic1" src="img/pi.jpg" width="150" height="150"/>
+        <div class="txtPersonHistory">
+        苍南竟有一个神秘的古村落---瑶洞古村，坐落于浙江苍南霞光港境内，大家有听过吗？整个村落都是那种藤蔓围绕，常年潮雾萦绕，灌木丛生。一种即凄凉落寞又神秘吸引你的一个存在，光听老板这样介绍，我一下子来了兴趣。
+传说中一个古村落的存在带给我们的不止是他独特的民俗民风当然还有留给后人的一些不可遗忘的美食！
+
+        </div>
+    </div>
+</div>
 </body>
 </html>
